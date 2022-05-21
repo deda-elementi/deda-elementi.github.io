@@ -35524,6 +35524,7 @@ src="https://www.facebook.com/tr?id=545169369216881&ev=PageView&noscript=1" />
 				case '3': tmp += " x 100mm"; break;
 				case '4': tmp += " x 110mm"; break;
 				case '5': tmp += " x 120mm"; break;
+				case '8': tmp += " x 130mm"; break;
 				default: badresult = true;
 			}
 			document.getElementById("rsize").innerHTML = tmp;
@@ -35534,7 +35535,12 @@ src="https://www.facebook.com/tr?id=545169369216881&ev=PageView&noscript=1" />
 			console.log("345 " + tmp + " bad " + badresult);
 
 			switch (number.charAt(6)) {
-				case '4': break;
+				case '2': 
+					document.getElementById("prodimg").src="https://i.imgur.com/LagJmc2.jpg";
+					break;
+				case '4': 
+					document.getElementById("prodimg").src="https://images-na.ssl-images-amazon.com/images/I/514u-u1b9YL._AC_SY450_.jpg";
+					break;
 				default: badresult = true;
 			}
 			console.log("6 bad " + badresult);
